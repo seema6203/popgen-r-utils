@@ -1,0 +1,36 @@
+# --- R session files -------------------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# --- R package build artefacts ---------------------------------------------
+.Rcheck/
+*.tar.gz
+src/*.o
+src/*.so
+src/*.dll
+renv/library/
+renv/staging/
+
+# --- Analysis output -------------------------------------------------------
+results/
+figures/
+*.pdf
+!man/figures/*.pdf
+
+# --- Data ------------------------------------------------------------------
+# Genotype files are usually the study's own data; commit them deliberately.
+data/*.csv
+!data/example_*.csv
+
+# --- OS cruft --------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- Editor ----------------------------------------------------------------
+.vscode/
+.idea/
+*~
+*.swp

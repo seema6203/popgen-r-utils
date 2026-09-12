@@ -1,0 +1,31 @@
+Package: popgenutils
+Type: Package
+Title: Reusable Helpers for SSR Population-Genetic Analysis
+Version: 0.1.0
+Authors@R: person("Seema", "Parveen", role = c("aut", "cre"),
+                  email = "seema6203@users.noreply.github.com")
+Description: A small toolkit that wraps the recurring steps of a microsatellite
+    (SSR) diversity study into documented, reusable functions: reading GenAlEx
+    files, per-population diversity summaries, pairwise F-statistics, AMOVA,
+    bootstrapped neighbour-joining trees, and principal coordinates analysis.
+    Grew out of one-off scripts written for a study of Indian Nymphaea
+    (water lily) populations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports:
+    grDevices,
+    graphics,
+    tools,
+    adegenet,
+    ade4,
+    ape,
+    ggplot2,
+    hierfstat,
+    poppr,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
